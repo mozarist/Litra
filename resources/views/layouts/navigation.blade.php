@@ -1,19 +1,19 @@
-<nav x-data="{ open: false }" class="fixed w-full bg-white/50 backdrop-blur-md border-b border-zinc-300 z-10">
+<nav x-data="{ open: false }" class="fixed w-fit bg-white/50 backdrop-blur-md border border-zinc-300 rounded-lg top-8 z-10">
     <!-- Primary Navigation Menu -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <div class="flex items-center gap-2 justify-between">
+    <div class="max-w-7xl p-4">
+        <div class="flex items-center gap-12 justify-center">
             <div class="flex">
                 <!-- Logo -->
-                <div class="shrink-0 flex items-center text-2xl text-emerald-600 font-semibold">
+                <div class="flex items-center gap-2 text-2xl font-semibold">
                     <h1>
                         <a href="/">
-                            <x-application-logo class="text-2xl" />
+                            <x-application-logo />
                         </a>
-                        @if (Route::is('admin.index', 'products.create', 'products.edit'))
-                            Admin Dashboard
-                        @endif
-
+                        
                     </h1>
+                    @if (Route::is('admin.index', 'products.create', 'products.edit'))
+                        - Admin dashboard
+                    @endif
                 </div>
 
                 <!-- Navigation Links -->
@@ -26,11 +26,11 @@
                             </x-nav-link>
 
                             <x-nav-link :href="route('admin.index')" :active="request()->routeIs('admin.index')">
-                                {{ __('Admin dashboard') }}
+                                {{ __('dashboard') }}
                             </x-nav-link>
 
                             <x-nav-link href="/admin#products">
-                                {{ __('Produk anda') }}
+                                {{ __('Daftar buku') }}
                             </x-nav-link>
 
                             <x-nav-link href="/admin#orders">
@@ -46,18 +46,15 @@
                             {{ __('Daftar buku') }}
                         </x-nav-link>
                         <x-nav-link :href="route('order.index')" :active="request()->routeIs('order.index')">
-                            {{ __('Pinjaman-mu') }}
+                            {{ __('Artikel Litra.') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('order.index')" :active="request()->routeIs('order.index')">
+                            {{ __('Artikel pembaca') }}
                         </x-nav-link>
                     @endif
 
                 </div>
             </div>
-
-            @if (!Route::is('admin.index', 'products.create', 'products.edit'))
-                <div class="w-64 lg:w-96">
-                    <x-search-bar>Cari buku</x-search-bar>
-                </div>
-            @endif
 
             <div class="flex gap-2 md:gap-2 items-center">
 
@@ -73,7 +70,7 @@
                                 <x-dropdown align="right" width="48">
                                     <x-slot name="trigger">
                                         <button
-                                            class="inline-flex items-center px-3 py-2 border border-zinc-300 text-sm leading-4 font-medium rounded-md text-emerald-600 bg-white/65 backdrop-blur-md hover:text-emerald-800 focus:outline-none transition ease-in-out duration-150">
+                                            class="inline-flex items-center px-3 py-2 border border-zinc-300 text-sm leading-4 font-medium rounded-md bg-white/65 backdrop-blur-md hover:text-zinc-800 focus:outline-none transition ease-in-out duration-150">
                                             <div>{{ Auth::user()->name }}</div>
 
                                             <div class="ms-1">
@@ -113,15 +110,13 @@
                             </div>
                         @else
                             <div class="flex gap-2">
-                                <a href="{{ route('login') }}"
-                                    class="bg-zinc-950/65 backdrop-blur-md w-fit text-white text-xs px-8 py-2 border border-zinc-500 rounded-full">
-                                    Log in
+                                <a href="{{ route('login') }}">
+                                    <x-secondary-button>Login</x-secondary-button>
                                 </a>
 
                                 @if (Route::has('register'))
-                                    <a href="{{ route('register') }}"
-                                        class="bg-white/50 backdrop-blur-md w-fit text-zinc-950 text-xs font-semibold px-8 py-2 border border-zinc-300 rounded-full">
-                                        Register
+                                    <a href="{{ route('register') }}">
+                                        <x-primary-button>Register</x-primary-button>
                                     </a>
                                 @endif
                             </div>

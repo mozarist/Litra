@@ -1,7 +1,7 @@
 <footer class="flex items-center justify-center bg-white w-full border-t border-zinc-300">
     <div class="w-full max-w-7xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
         <div class="sm:flex sm:items-center sm:justify-between">
-            <x-application-logo class="text-4xl"/>
+            <x-application-logo/>
 
             <ul class="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
                 <li>
@@ -156,6 +156,6 @@
             </div>
         </div>
 
-        <p class="text-xs text-gray-500">&copy; 2025 Pustaka-Ku All rights reserved. | Made by <a href="https://github.com/mozarist" class="hover:underline decoration-emerald-600 bg-gradient-to-tr from-zinc-950 via-green-600 to-emerald-600 bg-clip-text inline-block font-medium text-transparent">Mozarist</a></p>
+        <p class="text-xs text-gray-500">&copy; 2025 Pustaka-Ku All rights reserved. | Made by <a href="https://github.com/mozarist" class="hover:underline text-zinc-950 font-medium text-transparent">Mozarist</a></p>
     </div>
 </footer>

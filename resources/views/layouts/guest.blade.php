@@ -22,13 +22,13 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="flex items-center font-[Geist] text-zinc-900 antialiased bg-zinc-100 min-h-screen">
+<body class="flex flex-col lg:flex-row gap-10 xl:gap-0 items-center font-[Geist] text-zinc-900 antialiased bg-zinc-100 min-h-screen">
 
-    <div class="hidden md:block h-screen w-full p-5 px-5">
+    <div class="lg:h-screen w-full p-5 px-5">
         <div
-            class="flex flex-col justify-between gap-5 w-full h-full p-5 bg-gradient-to-t from-zinc-950 via-emerald-900 to-emerald-600 rounded-2xl">
-            <p class="text-7xl max-w-2xl w-full text-white p-5">
-                Pinjam dan baca buku lebih mudah di Pustaka-Ku!
+            class="flex flex-col justify-between gap-5 w-full h-1/3 lg:h-full p-5 bg-gradient-to-tr from-zinc-950 to-zinc-900 rounded-2xl">
+            <p class="text-6xl lg:text-8xl max-w-sm w-full text-white p-5">
+                Read, Reflect, Share.
             </p>
 
             <div class="flex gap-1 w-full">
@@ -47,14 +47,14 @@
         </div>
     </div>
 
-    <div class="flex flex-col sm:justify-center items-center w-full px-5 pt-6 sm:pt-0 ">
+    <div class="flex flex-col sm:justify-center items-center gap-5 w-full px-5 pt-6 sm:pt-0 ">
         <div>
-            <a href="/">
-                <x-application-logo class="text-6xl 2xl:text-8xl h-16 2xl:h-32" />
-            </a>
+            <h2 class="text-6xl font-semibold uppercase">
+                Login Litra.
+            </h2>
         </div>
 
-        <div class="w-full max-w-lg py-4">
+        <div class="w-full max-w-3xl py-4">
             {{ $slot }}
         </div>
     </div>

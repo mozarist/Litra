@@ -27,7 +27,7 @@
         @include('layouts.navigation')
 
         @if (request()->is('/'))
-            <div class="w-full px-4 pt-20 pb-5">
+            <div class="w-full p-4">
                 @include('layouts.hero')
             </div>
         @endif
