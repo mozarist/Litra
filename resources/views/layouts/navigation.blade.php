@@ -4,7 +4,7 @@
         <div class="flex items-center gap-12 justify-center">
             <div class="flex">
                 <!-- Logo -->
-                <div class="flex items-center gap-2 text-2xl font-semibold">
+                <div class="flex items-center gap-2 text-2xl font-semibold mix-blend-difference">
                     <h1>
                         <a href="/">
                             <x-application-logo />

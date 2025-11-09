@@ -34,15 +34,15 @@
             <div class="flex gap-1 w-full">
                 <img src="https://images.unsplash.com/photo-1604866830893-c13cafa515d5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
                     alt=""
-                    class="w-1/4 aspect-square object-cover rounded-l-2xl grayscale hover:filter-none transition-all duration-300">
+                    class="w-1/4 aspect-square object-cover rounded-l-2xl">
 
                 <img src="https://images.unsplash.com/photo-1494809610410-160faaed4de0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=688"
                     alt=""
-                    class="w-1/4 aspect-square object-cover grayscale hover:filter-none transition-all duration-300">
+                    class="w-1/4 aspect-square object-cover">
 
-                <img src="https://images.unsplash.com/photo-1600431521340-491eca880813?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1169"
+                <img src="https://images.unsplash.com/photo-1575260179532-693bd89dfe73?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
                     alt=""
-                    class="w-1/4 aspect-square object-cover rounded-r-2xl grayscale hover:filter-none transition-all duration-300">
+                    class="w-1/4 aspect-square object-cover rounded-r-2xl">
             </div>
         </div>
     </div>

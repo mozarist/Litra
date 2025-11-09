@@ -34,7 +34,7 @@
 
         <!-- Page Content -->
         <main
-            class="max-w-7xl w-full px-4 sm:px-6 lg:px-8 py-24 @if (request()->is('/')) pt-5 md:pt-12 space-y-32 @else sm:py-24 sm:space-y-10 @endif">
+            class="max-w-7xl w-full px-4 sm:px-6 lg:px-8 py-24 @if (request()->is('/')) pt-5 md:pt-12 space-y-20 @else sm:py-32 sm:space-y-10 @endif">
             {{ $slot }}
         </main>
 

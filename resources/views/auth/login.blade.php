@@ -37,16 +37,16 @@
         <div class="block mt-4">
             <label for="remember_me" class="inline-flex items-center">
                 <input id="remember_me" type="checkbox"
-                    class="rounded bg-emerald-600 border-emerald-600 text-emerald-600 shadow-sm focus:ring-emerald-600"
+                    class="rounded bg-zinc-950 border-zinc-950 text-zinc-950 shadow-sm focus:ring-zinc-950"
                     name="remember">
-                <span class="ms-2 text-sm text-emerald-600">{{ __('Remember me') }}</span>
+                <span class="ms-2 text-sm text-zinc-950">{{ __('Remember me') }}</span>
             </label>
         </div>
 
         <div class="flex gap-4 justify-end items-center mt-4">
 
             <a class="underline text-sm text-zinc-950 hover:text-zinc-800" href="{{ route('register') }}">
-                Not registered yet?
+                Belum terdaftar?
             </a>
 
             <x-primary-button>

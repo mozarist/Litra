@@ -5,7 +5,7 @@
         <div class="bg-white overflow-hidden border border-dashed border-zinc-500 rounded-md">
             <p class="p-5 font-semibold">
                 Selamat datang kembali, <span
-                    class="bg-gradient-to-tr from-green-600 to-emerald-600 bg-clip-text text-transparent inline-block">{{ Auth::user()->name }}!</span>
+                    class="text-zinc-700">{{ Auth::user()->name }}!</span>
             </p>
         </div>
 
