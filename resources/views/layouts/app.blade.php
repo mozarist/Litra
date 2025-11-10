@@ -23,7 +23,7 @@
 </head>
 
 <body class="font-[Geist] antialiased">
-    <div class="flex flex-col items-center justify-between min-h-screen bg-zinc-100 text-zinc-950">
+    <div class="flex flex-col gap-5 items-center justify-between min-h-screen grid-frame-light text-zinc-950">
         @include('layouts.navigation')
 
         @if (request()->is('/'))
@@ -34,7 +34,7 @@
 
         <!-- Page Content -->
         <main
-            class="max-w-7xl w-full px-4 sm:px-6 lg:px-8 py-24 @if (request()->is('/')) pt-5 md:pt-12 space-y-20 @else sm:py-32 sm:space-y-10 @endif">
+            class="max-w-7xl bg-white rounded-3xl w-full px-4 sm:px-8 lg:px-12 py-24 shadow-md @if (request()->is('/')) pt-5 md:pt-12 space-y-20 @else sm:py-32 sm:space-y-10 @endif">
             {{ $slot }}
         </main>
 

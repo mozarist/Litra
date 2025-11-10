@@ -4,7 +4,7 @@
         <div class="flex items-center gap-12 justify-center">
             <div class="flex">
                 <!-- Logo -->
-                <div class="flex items-center gap-2 text-2xl font-semibold mix-blend-difference">
+                <div class="flex items-center gap-2 text-2xl font-semibold">
                     <h1>
                         <a href="/">
                             <x-application-logo />
@@ -26,7 +26,7 @@
                             </x-nav-link>
 
                             <x-nav-link :href="route('admin.index')" :active="request()->routeIs('admin.index')">
-                                {{ __('dashboard') }}
+                                {{ __('Dashboard') }}
                             </x-nav-link>
 
                             <x-nav-link href="/admin#products">

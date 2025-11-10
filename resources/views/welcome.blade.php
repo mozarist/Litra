@@ -1,10 +1,10 @@
 <x-app-layout>
 
+    {{-- about us --}}
     <div class="flex flex-col md:flex-row gap-10 justify-between items-center w-full">
-
         <div class="max-w-2xl w-full space-y-8">
             <h2 class="text-3xl lg:text-6xl">
-                Tentang Litra
+                Apa itu Litra?
             </h2>
 
             <div class="space-y-2">
@@ -24,7 +24,7 @@
             <div>
                 <a href="{{ route('products.index') }}">
                     <x-primary-button>
-                        Jadi bagian Litra.
+                        Gabung dengan Litra!
                     </x-primary-button>
                 </a>
             </div>
@@ -46,7 +46,8 @@
             <h2 class="text-2xl md:text-6xl">Terbaru dari kami</h2>
             <div>
                 <a href="{{ route('products.index') }}"
-                    class="underline hover:text-zinc-800 font-medium transition">Lihat lebih
+                    class="underline hover:text-zinc-800 font-medium transition">Lihat
+                    lebih
                     banyak
                     artikel kami
                 </a>
@@ -59,7 +60,8 @@
                 Maaf! Belum ada artikel tersedia
             </p>
         @else
-            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols:3 xl:grid-cols-4 2xl-grid-cols-4 gap-5 items-center">
+            <div
+                class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols:3 xl:grid-cols-4 2xl-grid-cols-4 gap-5 items-center">
 
                 @foreach ($product->take(4) as $p)
                     <a href="{{ route('products.show', $p->id) }}">
@@ -97,9 +99,9 @@
                 @foreach ($product->take(8) as $p)
                     <a href="{{ route('products.show', $p->id) }}">
                         <div
-                            class="flex flex-col gap-5 bg-zinc-950 text-white p-5 w-full h-full border border-zinc-800 rounded-xl hover:scale-105 transition">
+                            class="flex flex-col gap-5 bg-zinc-50 p-5 w-full h-full border border-zinc-400 rounded-xl hover:scale-105 transition">
                             <img src="{{ asset('storage/' . $p->gambar) }}" alt=""
-                                class="flex-2 w-full aspect-square object-cover border border-zinc-800 rounded-xl">
+                                class="flex-2 w-full aspect-square object-cover border border-zinc-400 rounded-xl">
 
                             <div class="flex-1 flex flex-col gap-5 justify-between w-full h-full">
                                 <div class="space-y-2">
@@ -111,7 +113,7 @@
                                         -{{ $p->author }}
                                     </span>
 
-                                    <p class="text-sm text-zinc-300 leading-tight line-clamp-2">
+                                    <p class="text-zinc-700 text-sm leading-tight line-clamp-2">
                                         {{ $p->deskripsi }}
                                     </p>
                                 </div>
@@ -119,7 +121,7 @@
                                 <div class="flex items-center gap-2">
 
                                     <p class="text-sm font-semibold leading-none">
-                                        Kategori: <span class="text-zinc-300">{{ $p->kategori }}</span>
+                                        Kategori: <span class="text-zinc-700">{{ $p->kategori }}</span>
                                     </p>
 
                                 </div>
@@ -173,6 +175,37 @@
             </p>
         @else
         @endif
+    </div>
+
+    {{-- CTA section --}}
+    <div
+        class="flex flex-col md:flex-row gap-10 justify-between items-center grid-frame-dark text-white p-10 rounded-2xl w-full overflow-hidden">
+
+        <div class="max-w-xl w-full h-[400px] flex flex-col justify-between gap-8">
+            <h2 class="text-3xl lg:text-6xl">
+                Hidupkan literasi bersama Litra.
+            </h2>
+
+            <div>
+                <a href="{{ route('products.index') }}">
+                    <x-secondary-button>
+                        Jadi bagian Litra.
+                    </x-secondary-button>
+                </a>
+            </div>
+        </div>
+
+        <div class="relative top-36 pt-12 flex w-fit">
+            <img src="https://images.unsplash.com/photo-1568667256549-094345857637?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=715"
+                alt="img"
+                class="bg-zinc-100 w-[300px] h-[200px] object-cover border-4 border-zinc-100 rounded-xl shadow-2xl rotate-3">
+            <img src="https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
+                alt="img"
+                class="absolute -m-24 bg-zinc-100 w-[300px] h-[200px] object-cover border-4 border-zinc-100 rounded-xl shadow-2xl -rotate-2">
+            <img src="https://images.unsplash.com/photo-1614849963640-9cc74b2a826f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
+                alt="img"
+                class="absolute -m-52 bg-zinc-100 w-[300px] h-[200px] object-cover border-4 border-zinc-100 rounded-xl shadow-2xl rotate-3">
+        </div>
     </div>
 
 </x-app-layout>

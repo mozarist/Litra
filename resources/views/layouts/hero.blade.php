@@ -1,6 +1,6 @@
 <div
-    class="flex flex-col justify-center items-center gap-10 bg-gradient-to-t from-zinc-300 to-white
-           bg-center bg-cover w-full min-h-[95vh] p-5 border border-zinc-300 rounded-3xl">
+    class="flex flex-col justify-center items-center gap-10 bg-linear
+           bg-center bg-cover w-full min-h-[95vh] p-5 border border-zinc-300 shadow-md rounded-3xl">
 
     <div class="flex flex-col items-center gap-4">
         <h1 class="text-center text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold w-full max-w-6xl">
